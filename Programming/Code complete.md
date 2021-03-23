@@ -37,16 +37,20 @@ The key metaphors in programming:
 --------------------------------------------------------------------Chapter 3
 
 Importance of planning and developing previous conditions
-1.	Define the type of software you want to build
-2.	Planning and defining of preparatory requirements is very important
-3.	Correcting of mistakes and bugs costs mush less at the beginning of the work
-4.	Clients are stupid creatures. It’s extremely important to clearly define requirements at the beginning because they always want to change them and bring some new unreal details to project. Tell them that it will affect price and terms – always works!
-5.	Preparation == risk-off
-6.	Attention to the quality == CONST during all work from start to end
-7.	Define the problem of customer (what he or she really wants??) clearly
-8.	Explain importance of preparatory requirements to colleagues and customer
-9.	Always think about architecture / structure of the project
-10.	Preparation usually takes 10-15% of working on project time
+	1.	Define the type of software you want to build
+	2.	Planning and defining of preparatory requirements is very important
+	3.	Correcting of mistakes and bugs costs mush less at the beginning of the work
+	4.	Clients are stupid creatures. It’s extremely important to clearly define requirements at the beginning because they always want to change them and bring some new unreal details to project. Tell them that it will affect price and terms – always works!
+	5.	Preparation == risk-off
+	6.	Attention to the quality == CONST during all work from start to end
+	7.	Define the problem of customer (what he or she really wants??) clearly
+	8.	Explain importance of preparatory requirements to colleagues and customer
+	9.  Always think about architecture / structure of the project
+	10.	Preparation usually takes 10-15% of working on project time
+
+Iterative and serial approaches (best practices) to build software:
+Iterative - cyclical work, every cycle contains planning, implementation, checking and adjusting.
+Serial (waterfall) - working step by step on each stage. Every stage should be done before next stage can start.
 
 
 --------------------------------------------------------------------Chapter 4
@@ -63,12 +67,43 @@ So you should make a decision witch of them will be included.
 
 ALWAYS define rules of coding and coding style at the beginning.
 
+--------------------------------------------------------------------Chapter 5
 
+Designing software (before building)
 
+The are some typical problems in designing software:
+1. Analysing competing technologies of the project and balancing them
+2. Design not only features and opportunities but limits of your software too
+3. Sometimes software design is heuristic process, don't try to design only logical approach
+4. More often than not the problem of the design is a dirty problem (it means that you will truly understand the problem only after building software and not earlier, some problems will appear only after implementation)
 
+We must solve complicated problems with simple methods. Mistakes can be:
+	-solving simple problem with comploiated methods (overkill)
+	-simple but wrong solution
 
+Levels of software design:
+1. System
+2. Subsystems - modules and packages. It's very important to define interaction between them and to make them reusable, movable and easy to edit without editing all the system. All the system can not depend on subsystem. Common subsystems: GUI, api.
+3. Classes - defining classes and interaction between them, especially their interfaces. One of the most important aspect of OOP is difference betweeen class and object. Class - is a bun backing dish, object - the bun itself.
+4. Data and methods - some data and methods can be too complicated and require design
+5. Designing methods - defining individual methods
 
+Once again, software design is not determined process, so we should use heuristic methods.
 
+While designing we always work with objects of real world. We must decide which objects are required in our project.
+The target is to MINIMISE complexity. Use following working with real objects:
+1. Abstarction - is power weapon against real world complexity. Don't copy real objects but use only parameters which are truly needed.
+Abstraction tells us: "you can look at this house from bird's eye"
+2. Incapsulation - hides all the details. Incapsulation restricts your ability to look at the details of your house. It tells:
+"you can not get nearer, look only from afar"
+3. Inheritance - helps to group objects. It helps to implement common methods, which every object of some group must have.
+4. Hide information and realisation. Class should hide information iside. For example class can have 25 methods, but its interface
+should allow access only to 4-5 of them. Interface of a class should be like a top of an iceberg, showing only a little part of it above the water.
+5. Always think about future changes. Make classes adaptive and easy to change. New classes, methods and data should not affect old classes.
+Design interfaces so that changes inside them don't affect their interactions with other interfaces. Class changes should stay hidden from other classes. Separate elements which look like unstable at the beginning of design.
+6. Use best practisies, like design patterns. Don't invent the wheel. Patterns make communication between developers easy. They show possible approaches to solve your problem, its always easier to choose than to invent. 
+7. Give every class single responsibility.
 
+Sometimes brute force is needed. If you are in doubt use brute force.
 
-
+Draw schemes, it's always better to understand and explain with the picture.
