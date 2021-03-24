@@ -107,3 +107,11 @@ Design interfaces so that changes inside them don't affect their interactions wi
 Sometimes brute force is needed. If you are in doubt use brute force.
 
 Draw schemes, it's always better to understand and explain with the picture.
+
+Divide and rule! It's easier to work with small parts of code.
+
+"Going up" and "going down" design.
+You go up when you first determine specific objects and after that move to abstract classes. It's composmosition strategy.
+Going down means working with abstracts first. It is decomposition strategy.
+
+Always try to find balance between coding and designing.
