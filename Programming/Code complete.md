@@ -18,6 +18,8 @@ Devs are the core of the team.
 
 --------------------------------------------------------------------Chapter 2
 
+METAPHOR
+
 Metaphor is a very powerful method of understanding and explaining. Metaphor helps you to think more effectively and to understand complicated systems. The history of science is full of discoveries that were made through metaphors.
 
 Metaphor should be sharp, related to real material world, and easy to understand.
@@ -35,6 +37,8 @@ The key metaphors in programming:
 
 
 --------------------------------------------------------------------Chapter 3
+
+WORKING WITH CUSTOMERS, PREVIOUS CONDITIONS
 
 Importance of planning and developing previous conditions
 	1.	Define the type of software you want to build
@@ -55,6 +59,8 @@ Serial (waterfall) - working step by step on each stage. Every stage should be d
 
 --------------------------------------------------------------------Chapter 4
 
+BEFORE THE BEGINNING
+
 Programming in language is worse than programming into language, cause it will restrict you. 
 Dont bind yourself with one language.
 Think wider than languge frames. Modify loanguage and write your own features and libs if it is needed.
@@ -69,7 +75,7 @@ ALWAYS define rules of coding and coding style at the beginning.
 
 --------------------------------------------------------------------Chapter 5
 
-Designing software (before building)
+DESIGNING SOFTWARE (before building)
 
 The are some typical problems in designing software:
 1. Analysing competing technologies of the project and balancing them
@@ -115,3 +121,11 @@ You go up when you first determine specific objects and after that move to abstr
 Going down means working with abstracts first. It is decomposition strategy.
 
 Always try to find balance between coding and designing.
+
+--------------------------------------------------------------------Chapter 6
+
+CLASSES
+
+
+
+
