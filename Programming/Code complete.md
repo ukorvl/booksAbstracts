@@ -2,7 +2,7 @@ Code complete by STEVE MCCONNELL
 
 --------------------------------------------------------------------Chapter 1
 
-Software BUILDING not writing, coding or programming
+#Software BUILDING not writing, coding or programming#
 
 Consists:
 •	Building and debugging
@@ -18,7 +18,7 @@ Devs are the core of the team.
 
 --------------------------------------------------------------------Chapter 2
 
-METAPHOR
+#METAPHOR#
 
 Metaphor is a very powerful method of understanding and explaining. Metaphor helps you to think more effectively and to understand complicated systems. The history of science is full of discoveries that were made through metaphors.
 
@@ -38,7 +38,7 @@ The key metaphors in programming:
 
 --------------------------------------------------------------------Chapter 3
 
-WORKING WITH CUSTOMERS, PREVIOUS CONDITIONS
+#WORKING WITH CUSTOMERS, PREVIOUS CONDITIONS#
 
 Importance of planning and developing previous conditions
 	1.	Define the type of software you want to build
@@ -59,7 +59,7 @@ Serial (waterfall) - working step by step on each stage. Every stage should be d
 
 --------------------------------------------------------------------Chapter 4
 
-BEFORE THE BEGINNING
+#BEFORE THE BEGINNING#
 
 Programming in language is worse than programming into language, cause it will restrict you. 
 Dont bind yourself with one language.
@@ -75,7 +75,7 @@ ALWAYS define rules of coding and coding style at the beginning.
 
 --------------------------------------------------------------------Chapter 5
 
-DESIGNING SOFTWARE (before building)
+#DESIGNING SOFTWARE (before building)#
 
 The are some typical problems in designing software:
 1. Analysing competing technologies of the project and balancing them
@@ -124,8 +124,28 @@ Always try to find balance between coding and designing.
 
 --------------------------------------------------------------------Chapter 6
 
-CLASSES
+#CLASSES#
+Abstract data is always needed. it's a very powerful instrument in every science. The ability to abstract problem area from very complicated world and solve it is a key to succes.
+
+The key point is hiding realisation. If you work with abstract object you just call it's abstract methods, and this methods are the same for every person who works with it. This makes abstract data multifunctional. All realisation of this methods is hidden inside them. 
+
+Abstract data on all levels of complexity. Just very small and simple needs it. 
+Always remember about principle of anonymity - give as little data as it's possible.
+
+Abstraction is a base for class concept.
 
 
+*Quality class interface* is very important thing.
+Perfectly one class should present one abstract data. So it's interface should contain only corresponding methods.
+
+Sometimes you'll see that one part of methods works with one part of data and another part of methods works with the other data. This is a sign that in fact you have two classes and should divide your class.
+
+Think about reverse methods. If you add method "turnOnLights()", then you'll possibly need a method to turn them off.
+
+Minimize access to class methods. If you are disappointed about shoul method be opened of closed, just try to make it closed.
+
+Do not give access to class data, always use getters and setters instead.
+
+*Coupling* - is a strength of bonds between two classes. Always try to minimize coupling between classes.
 
 
