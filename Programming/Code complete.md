@@ -149,3 +149,20 @@ Do not give access to class data, always use getters and setters instead.
 *Coupling* - is a strength of bonds between two classes. Always try to minimize coupling between classes.
 
 
+Do not include too much data to one class. Orient yourself to 7-10 data objects in one class. If there is too much data divide this class.
+
+Child class must be just more specific version of parent class. Parent class determines all its inheritors, so it's radically important to design parent class very precisely. If child don't fit very well, it's better to remake parent or if it is not possible not to use inheritance at all.
+
+Remember Barb Liscov principle - all parent methods should exist in children classes and be invocable without any differences.
+
+*Make sure that you inherit only what you need.* Inherited methods can be: abstract redefined method (child inherits only method's interface, not implementation), redefined method (inherits interface and implementaion and can redefine it), non-redefined (inherits all but can not redefine). So don't inherit too much. If you need only implementation but not interface, use including but not inheritance.
+
+Don't use more than 6-7 levels of inheritance. Otherwise it will be increasing of complexity but not managing of it.
+
+Don't be fan of inheritance because sometimes it leads to growing of complexity. 
+
+Some simple rules of useing inheritance:
+		1. If some classes have common data but not methods don't use inheritance. Just create a common object and include it into them.
+		2. If some clases have the same behaviour but not data, make them children of one base abstract class, which will define this methods.
+		3. If some classes have common behaviour and data olso use inheritance and define data and methods in parent class.
+		4. Use inheritance when you want to define interface by base class and including when you want to manage interface by yourself.
