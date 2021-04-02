@@ -1,5 +1,7 @@
 Code complete by STEVE MCCONNELL
 
+
+
 --------------------------------------------------------------------Chapter 1
 
 #Software BUILDING not writing, coding or programming#
@@ -14,6 +16,8 @@ Consists:
 Software building is the main chapter of developing, and the main part of a project. Sales, marketing and etc are important, but the software itself is more significant. Project can’t live without a product.
 Developer and coder are different specializations. Dev must be able to do more. Dev is more creative. Dev often works not only with code, but with people and very often he must design soft, not only code it.
 Devs are the core of the team.
+
+
 
 
 --------------------------------------------------------------------Chapter 2
@@ -34,6 +38,8 @@ The key metaphors in programming:
 •	Literary metaphor of coding
 •	Metaphor of a pearl (slow accretion of soft). Incremental approach
 •	Building metaphor (like building a house)
+
+
 
 
 --------------------------------------------------------------------Chapter 3
@@ -57,6 +63,8 @@ Iterative - cyclical work, every cycle contains planning, implementation, checki
 Serial (waterfall) - working step by step on each stage. Every stage should be done before next stage can start.
 
 
+
+
 --------------------------------------------------------------------Chapter 4
 
 #BEFORE THE BEGINNING#
@@ -72,6 +80,9 @@ Its also important to pay attention for methods of software building and pattern
 So you should make a decision witch of them will be included.
 
 ALWAYS define rules of coding and coding style at the beginning.
+
+
+
 
 --------------------------------------------------------------------Chapter 5
 
@@ -98,6 +109,7 @@ Once again, software design is not determined process, so we should use heuristi
 
 While designing we always work with objects of real world. We must decide which objects are required in our project.
 The target is to MINIMISE complexity. Use following working with real objects:
+
 1. Abstarction - is power weapon against real world complexity. Don't copy real objects but use only parameters which are truly needed.
 Abstraction tells us: "you can look at this house from bird's eye"
 2. Incapsulation - hides all the details. Incapsulation restricts your ability to look at the details of your house. It tells:
@@ -106,9 +118,10 @@ Abstraction tells us: "you can look at this house from bird's eye"
 4. Hide information and realisation. Class should hide information iside. For example class can have 25 methods, but its interface
 should allow access only to 4-5 of them. Interface of a class should be like a top of an iceberg, showing only a little part of it above the water.
 5. Always think about future changes. Make classes adaptive and easy to change. New classes, methods and data should not affect old classes.
-Design interfaces so that changes inside them don't affect their interactions with other interfaces. Class changes should stay hidden from other classes. Separate elements which look like unstable at the beginning of design.
+Design interfaces so that changes inside them don't affect their interactions with other interfaces. Class changes should stay hidden from other classes. Separate elements which look like unstable at the beginning of design. You can use Adapter pattern for example to make one outcoming format of data, which another classes can use with one method without cheking this data.
 6. Use best practisies, like design patterns. Don't invent the wheel. Patterns make communication between developers easy. They show possible approaches to solve your problem, its always easier to choose than to invent. 
 7. Give every class single responsibility.
+
 
 Sometimes brute force is needed. If you are in doubt use brute force.
 
@@ -122,6 +135,9 @@ Going down means working with abstracts first. It is decomposition strategy.
 
 Always try to find balance between coding and designing.
 
+
+
+
 --------------------------------------------------------------------Chapter 6
 
 #CLASSES#
@@ -133,6 +149,8 @@ Abstract data on all levels of complexity. Just very small and simple needs it.
 Always remember about principle of anonymity - give as little data as it's possible.
 
 Abstraction is a base for class concept.
+
+**EVERY class should have it's own main purpose.**
 
 
 *Quality class interface* is very important thing.
@@ -151,7 +169,7 @@ Do not give access to class data, always use getters and setters instead.
 
 Do not include too much data to one class. Orient yourself to 7-10 data objects in one class. If there is too much data divide this class.
 
-Child class must be just more specific version of parent class. Parent class determines all its inheritors, so it's radically important to design parent class very precisely. If child don't fit very well, it's better to remake parent or if it is not possible not to use inheritance at all.
+Child class must be just more specific version of parent class. In a nutshell child must be kind of parent. You should have an ability to say: 'child is parent'. Parent class determines all its inheritors, so it's radically important to design parent class very precisely. If child don't fit very well, it's better to remake parent or if it is not possible not to use inheritance at all.
 
 Remember Barb Liscov principle - all parent methods should exist in children classes and be invocable without any differences.
 
@@ -166,3 +184,25 @@ Some simple rules of useing inheritance:
 		2. If some clases have the same behaviour but not data, make them children of one base abstract class, which will define this methods.
 		3. If some classes have common behaviour and data olso use inheritance and define data and methods in parent class.
 		4. Use inheritance when you want to define interface by base class and including when you want to manage interface by yourself.
+
+
+*Main reasons to create a class*
+You can create class for every object of the real world, abstarct class for abstract object which does not exist, like Shape (with real children like Square).
+
+Decreasing complexity is the main reason for creating a class, because class helps to hide data and implementation inside.
+
+Reusing of code is the other reason to create classes, because classes make your code easy to reuse.
+
+Avoid creating classes which contain little data and big methods, with names like StringBuilder or DataInitialization, sometimes it's better to transform them into methods.
+
+
+
+
+
+
+
+
+
+
+
+
