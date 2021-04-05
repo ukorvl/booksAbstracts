@@ -198,6 +198,24 @@ Avoid creating classes which contain little data and big methods, with names lik
 
 
 
+--------------------------------------------------------------------Chapter 6
+
+#METHODS#
+There are some criteria to check your methods:
+1. Method should have understandable name
+2. M should be described in description
+3. If it is possible M should be pure function
+4. M should have one main purpose
+5. M should take less arguments (5-7 is enough)
+
+Methods is the most effective way to solve problem of complexity of your code.
+Methods prevent repeating of code.
+Methods help to refactor your code (it is all settled in one place).
+Methods help to read and understand code
+Methods are reusable
+
+*Create even simple methods of three or four strings of code. It will be helpful*
+
 
 
 
