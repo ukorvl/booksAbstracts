@@ -205,8 +205,9 @@ There are some criteria to check your methods:
 1. Method should have understandable name
 2. M should be described in description
 3. If it is possible M should be pure function
-4. M should have one main purpose
+4. M should have one main purpose (if it is not - divide method)
 5. M should take less arguments (5-7 is enough)
+6. M should have strength (should have high cohesion) - it means M should not solve different tasks
 
 Methods is the most effective way to solve problem of complexity of your code.
 Methods prevent repeating of code.
@@ -214,12 +215,19 @@ Methods help to refactor your code (it is all settled in one place).
 Methods help to read and understand code
 Methods are reusable
 
-*Create even simple methods of three or four strings of code. It will be helpful*
+*Create even simple methods of three or four strings of code. It may be helpful in future*
 
+Method can be functional (to do some actions), organizing (to invoke group of another methods), event handlers (to handle different cases of some data and invoke the corresponding methods)
 
+*Naming*
+Names of methods should clearly describe their role. Avoid abstract names like DealWithOutput(), be clear.
+If you can't clearly describe what this method do in it's name, this method is corrupted and you need to refactor it. 
 
+Describe in the name what this function returns.
 
+Use antonyms (because they are dramatically clear) like open/close, get/set, insert/delete, show/hide.
 
+*Length* of method is olso some kind of problem. Steve recommends to limit them with 50-60 strings of code. In special cases method can contain about 180-200 strings of code but ot more. 
 
 
 
