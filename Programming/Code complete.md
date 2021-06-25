@@ -198,7 +198,7 @@ Avoid creating classes which contain little data and big methods, with names lik
 
 
 
---------------------------------------------------------------------Chapter 6
+--------------------------------------------------------------------Chapter 7
 
 #METHODS#
 There are some criteria to check your methods:
@@ -227,8 +227,21 @@ Describe in the name what this function returns.
 
 Use antonyms (because they are dramatically clear) like open/close, get/set, insert/delete, show/hide.
 
-*Length* of method is olso some kind of problem. Steve recommends to limit them with 50-60 strings of code. In special cases method can contain about 180-200 strings of code but ot more. 
+*Length* of method is olso some kind of problem. Steve recommends to limit them with 50-60 strings of code. In special cases method can contain about 180-200 strings of code but not more. 
+
+*Function* returns a value, *procedure* does not (returns void).
+Always check what method returns, check all possible ways of process. Maybe its better to define returned value at the beginnig of the method as a default to be sure that method always return something.
+High order function - a function that takes a fuction as an argument and returns a function.
+
+*Input parameters*
+Errors in interaction between methods are one of the most common errors!
+1. Don't use and dont change parameters inside method, create local variables for that.
+2. Place output parameters after input parameters in method declaration.
+3. Always look at a type of data of parameters, especially at output parameters.
 
 
 
 
+--------------------------------------------------------------------Chapter 8
+
+#PROTECTION OF PROGRAM#
