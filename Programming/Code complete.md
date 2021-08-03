@@ -244,4 +244,23 @@ Errors in interaction between methods are one of the most common errors!
 
 --------------------------------------------------------------------Chapter 8
 
-#PROTECTION OF PROGRAM#
+#PROTECTED PROGRAMMING#
+Main principle of good program - it does not give out garbage.
+It can give out nothing when finds garbage inside, it can give out error or it can filter garbage on entrance.
+
+1. Check all data from internal sources - formData etc.
+2. Check all entry parameters of method.
+
+Use assertions or create and use them (if there are no default optin in your language)
+
+Ways of handling with errors:
+1. Return neutral value - if value is not very important, for ex for color of piexel you can use background color
+2. Continue to run programm - if it is a cycle of actions where only oe is error
+3. Return previous value
+4. Return nearest acceptable value
+5. Return error or call eror handler to deal with it
+6. Write error to log
+7. Stop working (when the price of error is too high)
+
+*STABILITY against CORRECTNESS*
+
